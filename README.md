@@ -28,6 +28,7 @@ Import the Shoetopia.sql script located in the cloned repository. This will crea
 
 ### Configure the Data Generation Script
 Open the sqlpy.py file in a text editor and update the following lines with your MySQL server's configuration:
+
 Line 1: app.config['MYSQL_HOST'] = 'your_host'
 Line 2: app.config['MYSQL_USER'] = 'your_user'
 Line 3: app.config['MYSQL_PASSWORD'] = 'your_password'
