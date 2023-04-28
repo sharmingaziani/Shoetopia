@@ -40,6 +40,7 @@ Replace your_host, your_user, and your_password with the appropriate values for 
 Navigate to the repository folder in a terminal or command prompt and run the following command:
 
 python sqlpy.py 
+
 This will start the python script and generate the data.
 
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
