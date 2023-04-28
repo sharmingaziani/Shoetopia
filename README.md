@@ -40,7 +40,7 @@ Replace your_host, your_user, and your_password with the appropriate values for 
 Navigate to the repository folder in a terminal or command prompt and run the following command:
 
 python sqlpy.py
-This will start the python script development server. You should see output similar to the following:
+This will start the python script and generate the data.
 
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 Open your favorite web browser and navigate to the address displayed in the output (e.g., http://127.0.0.1:5000/). You should now see the Shoetopia homepage, displaying the shoe data from the MySQL database.
