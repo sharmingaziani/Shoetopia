@@ -25,21 +25,20 @@ git clone https://github.com/jaj180010/Shoetopia.git
 Start your MySQL server.
 Open your favorite MySQL client (e.g., MySQL Workbench, phpMyAdmin).
 Import the Shoetopia.sql script located in the cloned repository. This will create and configure the shoetopia database.
-### Configure the Application
+
+### Configure the Data Generation Script
 Open the sqlpy.py file in a text editor and update the following lines with your MySQL server's configuration:
-
-
-app.config['MYSQL_HOST'] = 'your_host'
-app.config['MYSQL_USER'] = 'your_user'
-app.config['MYSQL_PASSWORD'] = 'your_password'
-app.config['MYSQL_DB'] = 'shoetopia'
+Line 1: app.config['MYSQL_HOST'] = 'your_host'
+Line 2: app.config['MYSQL_USER'] = 'your_user'
+Line 3: app.config['MYSQL_PASSWORD'] = 'your_password'
+Line 4: app.config['MYSQL_DB'] = 'shoetopia'
 Replace your_host, your_user, and your_password with the appropriate values for your MySQL server.
 
 ### Running the Application
 Navigate to the repository folder in a terminal or command prompt and run the following command:
 
 python sqlpy.py
-This will start the Flask development server. You should see output similar to the following:
+This will start the python script development server. You should see output similar to the following:
 
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 Open your favorite web browser and navigate to the address displayed in the output (e.g., http://127.0.0.1:5000/). You should now see the Shoetopia homepage, displaying the shoe data from the MySQL database.
