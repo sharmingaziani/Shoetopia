@@ -10,14 +10,12 @@ Before you can run the Shoetopia application, make sure you have the following s
 Python 3.6 or later
 MySQL 5.7 or later
 Git (optional)
-Additionally, you will need to install the following Python packages:
 
-### Flask
+Additionally, you will need to install the following Python packages:
+Flask
 Flask-MySQL
 Flask-SQLAlchemy
 You can install these packages using pip:
-
-
 pip install Flask Flask-MySQL Flask-SQLAlchemy
 
 ###Clone the Repository
