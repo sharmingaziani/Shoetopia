@@ -12,11 +12,11 @@ Before you can run the Shoetopia application, make sure you have the following s
 3. Git (optional)
 
 Additionally, you will need to install the following Python packages:
-PyMySQL
+1. PyMySQL
 
 pip install pymysql
 
-###Clone the Repository
+### Clone the Repository
 To get a copy of the Shoetopia repository, you can either download it as a zip file or clone it using Git:
 
 git clone https://github.com/jaj180010/Shoetopia.git
