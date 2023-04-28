@@ -8,7 +8,7 @@ These instructions will guide you through setting up the project on your local m
 Before you can run the Shoetopia application, make sure you have the following software installed on your system:
 
 Python 3.6 or later
-MySQL 5.7 or later
+MySQL 5.7 or later 
 Git (optional)
 
 Additionally, you will need to install the following Python packages:
