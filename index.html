@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shoe Store Database Interface</title>
+</head>
+<body class = "test">
+    <h1><div id="search-container">
+        <img src = "SPINTOWIN_RGB-01.png"  id = "search-btn" width="500" height="250"></img>
+        <!-- <h1 style = "font-family:'Times New Roman', Times, serif;color:#ffffff;">WIN!!!!!!!!!!!!!! COME HERE FOR FREE SHOES!!!!!!!!!!!!!</h1> -->
+        <div hidden><input type="text" id="search-input" placeholder="Search shoes..."></div>
+        <!-- <button id="search-btn">BEGIN</button> -->
+        
+    </div></h1>
+
+    
+<div hidden>
+    <div id="result-container">
+        <h2>Results</h2>
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th>SKey</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Color</th>
+                    <th>Type</th>
+                    <th></th>
+                    <th>Brand Name</th>
+                </tr>
+            </thead>
+            <tbody id="result-table-body">
+                <!-- Results will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <div id="crate-container">
+        <!-- Shoe crates will be inserted here -->
+    </div>
+    <audio id="open-crate-sound" src="Untitled video - Made with Clipchamp.mp4" preload="auto" ></audio>
+<button id="open-crate-btn">Open Crate</button>
+
+    <script src="script.js"></script>
+    <script>
+        const openCrateButton = document.getElementById('open-crate-btn');
+        const openCrateSound = document.getElementById('open-crate-sound');
+        let soundTimeout;
+      
+        openCrateButton.addEventListener('click', function() {
+          if (openCrateSound.paused) {
+            openCrateSound.play();
+            soundTimeout = setTimeout(function() {
+              openCrateSound.pause();
+              setTimeout(function() {
+                openCrateSound.currentTime = 0;
+              }, 2000);
+            }, 10000);
+          }
+        });
+      
+        openCrateSound.addEventListener('ended', function() {
+          clearTimeout(soundTimeout);
+          setTimeout(function() {
+            openCrateSound.currentTime = 0;
+          }, 2000);
+        });
+      </script>
+</body>
+</html>
